@@ -1,0 +1,38 @@
+html, body, *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size:10px;
+}
+
+:root{
+  --light-blue:#2998ff;
+  --dark-blue:#135cc5;
+
+  --light-red: #f87171;
+  --dark-red: #dc2626;
+
+
+  --primary: var(--light-blue);
+  --secondary: var(--dark-blue);
+  --font-color: #001010;
+
+
+  --h1: 7.594rem;
+  --h2: 5.063rem;
+}
+body{
+  background-color: var(--primary);
+}
+h1{
+  font-size: var(--h1);
+}
+h2{
+  font-size: var(--h2);
+}
+.warm{
+  --primary: var(--light-red);
+}
+.cool{
+  --primary:var(--light-blue);
+}
