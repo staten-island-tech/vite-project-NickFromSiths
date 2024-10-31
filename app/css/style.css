@@ -1,11 +1,11 @@
-html, body, *{
+html, body, * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size:10px;
 }
 
-:root{
+:root {
   --light-blue:#2998ff;
   --dark-blue:#135cc5;
 
@@ -21,18 +21,67 @@ html, body, *{
   --h1: 7.594rem;
   --h2: 5.063rem;
 }
-body{
-  background-color: var(--primary);
+body {
+  /* background-color: var(--primary); */
 }
-h1{
+h1 {
   font-size: var(--h1);
 }
-h2{
+h2 {
   font-size: var(--h2);
 }
-.warm{
+.warm {
   --primary: var(--light-red);
 }
-.cool{
+.cool {
   --primary:var(--light-blue);
+}
+
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--light-blue);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--dark-blue);
+  border-radius: 5px;
+}
+
+.navbar {
+  width: 100%;
+  height: 7rem;
+  background-color: var(--primary);
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navcontent{
+  margin: 7px 15px;
+}
+#logo{
+  align-items: center;
+}
+.body {
+  display:flex;
+  flex-direction: row;
+  height: 70rem ;
+}
+.side {
+  width: 30%;
+  height: 100%;
+  background-color: var(--dark-red);
+}
+.main {
+  width: 70%;
+  height: 100%;
+  background-color: var(--light-red);
+}
+.footer{
+  height: 100rem;
+  width: 100%;
+  background-color: var(--dark-blue);
 }
