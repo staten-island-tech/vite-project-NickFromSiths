@@ -21,9 +21,9 @@ html, body, * {
   --h1: 7.594rem;
   --h2: 5.063rem;
 }
-body {
-  /* background-color: var(--primary); */
-}
+/* body {
+  background-color: var(--primary); 
+}*/
 h1 {
   font-size: var(--h1);
 }
