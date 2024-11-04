@@ -12,9 +12,18 @@ html, body, * {
   --light-red: #f87171;
   --dark-red: #dc2626;
 
+  --gra1: #fffdfd;
+  --gra2: #cecece;
+  --gra3: #b4b1b1;
+  --gra4: #929291;
+  --gra5: #707373;
+  --gra6: #5f5f5e;
+  --gra7: #515150;
+  --gra8: #41403f;
 
-  --primary: var(--light-blue);
-  --secondary: var(--dark-blue);
+  --primary: var(--gra7);
+  --secondary: var(--gra2);
+
   --font-color: #001010;
 
 
@@ -42,10 +51,10 @@ h2 {
   width: 14px;
 }
 ::-webkit-scrollbar-track {
-  background-color: var(--light-blue);
+  background-color: var(--primary);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--dark-blue);
+  background-color: var(--secondary);
   border-radius: 5px;
 }
 
@@ -73,15 +82,20 @@ h2 {
 .side {
   width: 30%;
   height: 100%;
-  background-color: var(--dark-red);
+  background-color: var(--secondary);
 }
 .main {
   width: 70%;
   height: 100%;
-  background-color: var(--light-red);
+  background-color: var(--gra1);
 }
-.footer{
+.content{
   height: 100rem;
   width: 100%;
-  background-color: var(--dark-blue);
+  background: var(--gra3);
+}
+.footer{
+  height: 7rem;
+  width: 100%;
+  background-color: var(--primary);
 }
