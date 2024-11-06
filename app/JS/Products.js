@@ -140,3 +140,5 @@ const techProducts = [
     features: ["Wi-Fi 6", "Gigabit Speeds", "Parental Controls"],
   },
 ];
+
+export { techProducts };
