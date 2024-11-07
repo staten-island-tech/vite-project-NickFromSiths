@@ -14,15 +14,23 @@ function cards() {
     const specific = `<div class="card"> 
 
           <h2 class="Title">${element["name"]}</h2> 
-          <p class="Description">${element["price"]}</p> 
-          <p class="Description">${element["salePrice"]}</p> 
-          <p class="Description">${element["brand"]}</p> 
-          <p class="Description">${element["features"]}</p> 
-          <img src="${element.img}" alt="${element[""]}" class="Image"></img>
+          <p class="Description">Price: ${element["price"]}</p> 
+          <p class="Description">Sale Price: ${element["salePrice"]}</p> 
+          <p class="Description">Brand: ${element["brand"]}</p> 
+          <p class="Description">Features: ${element["features"]}</p> 
+          <img src="${element[""]}" alt="${element[""]}" class="Image"></img>
       </div>`;
 
-    DOMSelectors.container.insertAdjacentHTML("afterbegin", specific);
+    DOMSelectors.container.insertAdjacentHTML("beforeend", specific);
   });
 }
 
 cards();
+
+function showByGenre(x) {
+  document.querySelector(".container").innerHTML = "";
+  const filtered = techProducts.filter((i) => i[x]);
+}
+
+// DOMSelectors.form.addEventListener()
+// for checkbox form for sorting cards

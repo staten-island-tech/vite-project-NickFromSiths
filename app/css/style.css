@@ -99,7 +99,10 @@ h2 {
   width: 100%;
   background-color: var(--primary);
 }
-
+.products{
+  text-align: center;
+  padding: 2rem;
+}
 
 
 

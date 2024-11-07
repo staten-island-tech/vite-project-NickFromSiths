@@ -12,6 +12,7 @@ const techProducts = [
     salePrice: 1099,
     brand: "Brand B",
     features: ["16GB RAM", "512GB SSD", "Intel i7 Processor"],
+    img: "",
   },
   {
     name: "Wireless Earbuds",
@@ -19,6 +20,7 @@ const techProducts = [
     salePrice: 149,
     brand: "Brand C",
     features: ["Noise Cancelling", "30h Battery Life", "IPX4 Water Resistance"],
+    img: "",
   },
   {
     name: "Smartwatch Pro",
@@ -26,6 +28,7 @@ const techProducts = [
     salePrice: 249,
     brand: "Brand D",
     features: ["Heart Rate Monitor", "GPS", "30+ Sports Modes"],
+    img: "",
   },
   {
     name: "Gaming Monitor",
@@ -33,6 +36,7 @@ const techProducts = [
     salePrice: 399,
     brand: "Brand E",
     features: ["144Hz Refresh Rate", "1ms Response Time", "G-Sync Compatible"],
+    img: "",
   },
   {
     name: "Portable SSD",
@@ -40,6 +44,7 @@ const techProducts = [
     salePrice: 99,
     brand: "Brand F",
     features: ["1TB Capacity", "USB 3.2", "Shock Resistant"],
+    img: "",
   },
   {
     name: "Bluetooth Speaker",
@@ -47,6 +52,7 @@ const techProducts = [
     salePrice: 69,
     brand: "Brand G",
     features: ["10h Playtime", "Water Resistant", "Built-in Microphone"],
+    img: "",
   },
   {
     name: "Smart Home Hub",
@@ -54,6 +60,7 @@ const techProducts = [
     salePrice: 149,
     brand: "Brand H",
     features: ["Voice Control", "Compatible with Alexa", "Home Automation"],
+    img: "",
   },
   {
     name: "VR Headset",
@@ -61,6 +68,7 @@ const techProducts = [
     salePrice: 349,
     brand: "Brand I",
     features: ["6DoF Tracking", "High Resolution", "Wide Field of View"],
+    img: "",
   },
   {
     name: "Wireless Charger",
@@ -68,6 +76,7 @@ const techProducts = [
     salePrice: 39,
     brand: "Brand J",
     features: ["Fast Charging", "Universal Compatibility", "LED Indicator"],
+    img: "",
   },
   {
     name: "Action Camera",
@@ -75,6 +84,7 @@ const techProducts = [
     salePrice: 249,
     brand: "Brand K",
     features: ["4K Video", "Waterproof", "Wide Angle Lens"],
+    img: "",
   },
   {
     name: "Laptop Stand",
@@ -82,6 +92,7 @@ const techProducts = [
     salePrice: 29,
     brand: "Brand L",
     features: ["Adjustable Height", "Foldable", "Cooling Vent"],
+    img: "",
   },
   {
     name: "Wireless Mouse",
@@ -89,6 +100,7 @@ const techProducts = [
     salePrice: 39,
     brand: "Brand M",
     features: ["Ergonomic Design", "USB-C Charging", "Adjustable DPI"],
+    img: "",
   },
   {
     name: "Streaming Device",
@@ -96,6 +108,7 @@ const techProducts = [
     salePrice: 39,
     brand: "Brand N",
     features: ["4K Streaming", "Voice Remote", "Supports Major Apps"],
+    img: "",
   },
   {
     name: "Smart Light Bulb",
@@ -103,6 +116,7 @@ const techProducts = [
     salePrice: 10,
     brand: "Brand O",
     features: ["Color Changing", "App Controlled", "Energy Efficient"],
+    img: "",
   },
   {
     name: "USB Hub",
@@ -110,6 +124,7 @@ const techProducts = [
     salePrice: 19,
     brand: "Brand P",
     features: ["7 Ports", "USB 3.0", "Compact Design"],
+    img: "",
   },
   {
     name: "Over-Ear Headphones",
@@ -117,6 +132,7 @@ const techProducts = [
     salePrice: 249,
     brand: "Brand Q",
     features: ["Active Noise Cancelling", "20h Battery Life", "Comfort Fit"],
+    img: "",
   },
   {
     name: "Fitness Tracker",
@@ -124,6 +140,7 @@ const techProducts = [
     salePrice: 79,
     brand: "Brand R",
     features: ["Step Counter", "Sleep Monitor", "Water Resistant"],
+    img: "",
   },
   {
     name: "Webcam",
@@ -131,6 +148,7 @@ const techProducts = [
     salePrice: 69,
     brand: "Brand S",
     features: ["1080p HD", "Built-in Microphone", "Wide Angle"],
+    img: "",
   },
   {
     name: "Network Router",
@@ -138,6 +156,7 @@ const techProducts = [
     salePrice: 119,
     brand: "Brand T",
     features: ["Wi-Fi 6", "Gigabit Speeds", "Parental Controls"],
+    img: "",
   },
 ];
 
