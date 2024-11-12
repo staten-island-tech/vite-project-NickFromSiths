@@ -7,11 +7,13 @@ const DOMSelectors = {
   button: document.querySelector(".sub"),
   description: document.querySelector("#description"),
   container: document.querySelector(".container"),
+  option1: document.querySelector("#1"),
 };
 
 function cards() {
   techProducts.forEach((element) => {
-    const specific = `<div class="card"> 
+    if (element["salePrice"]) {
+      const specific = `<div class="card"> 
 
           <h2 class="Title">${element["name"]}</h2> 
           <p class="Description">Price: ${element["price"]}</p> 
@@ -21,7 +23,18 @@ function cards() {
           <img src="${element[""]}" alt="${element[""]}" class="Image"></img>
       </div>`;
 
-    DOMSelectors.container.insertAdjacentHTML("beforeend", specific);
+      DOMSelectors.container.insertAdjacentHTML("beforeend", specific);
+    } else {
+      const specific = `<div class="card"> 
+          <h2 class="Title">${element["name"]}</h2> 
+          <p class="Description">Price: ${element["price"]}</p> 
+          <p class="Description">Brand: ${element["brand"]}</p> 
+          <p class="Description">Features: ${element["features"]}</p> 
+          <img src="${element[""]}" alt="${element[""]}" class="Image"></img>
+      </div>`;
+
+      DOMSelectors.container.insertAdjacentHTML("beforeend", specific);
+    }
   });
 }
 
@@ -29,8 +42,10 @@ cards();
 
 function showByGenre(x) {
   document.querySelector(".container").innerHTML = "";
-  const filtered = techProducts.filter((i) => i[x]);
+  const filtered = techProducts.filter((i) => i[salePrice]);
 }
-
+DOMSelectors.option1.addEventListener("click", function (event) {
+  event.preventDefault();
+});
 // DOMSelectors.form.addEventListener()
 // for checkbox form for sorting cards

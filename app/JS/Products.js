@@ -17,7 +17,7 @@ const techProducts = [
   {
     name: "Wireless Earbuds",
     price: 199,
-    salePrice: 149,
+    // salePrice: 149,
     brand: "Brand C",
     features: ["Noise Cancelling", "30h Battery Life", "IPX4 Water Resistance"],
     img: "",
@@ -41,7 +41,7 @@ const techProducts = [
   {
     name: "Portable SSD",
     price: 129,
-    salePrice: 99,
+    // salePrice: 99,
     brand: "Brand F",
     features: ["1TB Capacity", "USB 3.2", "Shock Resistant"],
     img: "",
@@ -57,7 +57,7 @@ const techProducts = [
   {
     name: "Smart Home Hub",
     price: 199,
-    salePrice: 149,
+    // salePrice: 149,
     brand: "Brand H",
     features: ["Voice Control", "Compatible with Alexa", "Home Automation"],
     img: "",
@@ -81,7 +81,7 @@ const techProducts = [
   {
     name: "Action Camera",
     price: 299,
-    salePrice: 249,
+    // salePrice: 249,
     brand: "Brand K",
     features: ["4K Video", "Waterproof", "Wide Angle Lens"],
     img: "",
@@ -89,7 +89,7 @@ const techProducts = [
   {
     name: "Laptop Stand",
     price: 39,
-    salePrice: 29,
+    // salePrice: 29,
     brand: "Brand L",
     features: ["Adjustable Height", "Foldable", "Cooling Vent"],
     img: "",
@@ -113,7 +113,7 @@ const techProducts = [
   {
     name: "Smart Light Bulb",
     price: 15,
-    salePrice: 10,
+    // salePrice: 10,
     brand: "Brand O",
     features: ["Color Changing", "App Controlled", "Energy Efficient"],
     img: "",
@@ -129,7 +129,7 @@ const techProducts = [
   {
     name: "Over-Ear Headphones",
     price: 299,
-    salePrice: 249,
+    // salePrice: 249,
     brand: "Brand Q",
     features: ["Active Noise Cancelling", "20h Battery Life", "Comfort Fit"],
     img: "",
@@ -137,7 +137,7 @@ const techProducts = [
   {
     name: "Fitness Tracker",
     price: 99,
-    salePrice: 79,
+    // salePrice: 79,
     brand: "Brand R",
     features: ["Step Counter", "Sleep Monitor", "Water Resistant"],
     img: "",

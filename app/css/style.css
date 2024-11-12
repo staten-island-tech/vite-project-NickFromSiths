@@ -68,6 +68,13 @@ h2 {
   flex-direction: row;
   align-items: center;
 }
+.option{
+  height: 5rem;
+  width: 30rem;
+  background-color: transparent;
+  margin-left: 5rem;
+
+}
 .navcontent{
   margin: 7px 15px;
 }
