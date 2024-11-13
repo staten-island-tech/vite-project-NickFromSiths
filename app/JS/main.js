@@ -7,7 +7,8 @@ const DOMSelectors = {
   button: document.querySelector(".sub"),
   description: document.querySelector("#description"),
   container: document.querySelector(".container"),
-  option1: document.querySelector("#1"),
+  option1: document.querySelector("#one"),
+  theme1: document.querySelector(".theme"),
 };
 
 function cards() {
@@ -36,6 +37,7 @@ function cards() {
       DOMSelectors.container.insertAdjacentHTML("beforeend", specific);
     }
   });
+  console.log("1")
 }
 
 cards();
@@ -46,6 +48,12 @@ function showByGenre(x) {
 }
 DOMSelectors.option1.addEventListener("click", function (event) {
   event.preventDefault();
+  showByGenre();
 });
+
+DOMSelectors.theme1.addEventListener("click", function (event){
+  event.preventDefault();
+
+})
 // DOMSelectors.form.addEventListener()
 // for checkbox form for sorting cards
