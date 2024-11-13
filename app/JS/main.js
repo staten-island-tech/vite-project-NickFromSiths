@@ -37,24 +37,23 @@ function cards() {
       DOMSelectors.container.insertAdjacentHTML("beforeend", specific);
     }
   });
-  console.log("1")
+  console.log("1");
 }
 
 cards();
 
 function showByGenre(x) {
   document.querySelector(".container").innerHTML = "";
-  const filtered = techProducts.filter((i) => i[salePrice]);
-  DOMSelectors.container.insertAdjacentHTML("beforeend", filtered)
+  const filtered = techProducts.filter((element) => element.salePrice);
+  DOMSelectors.container.insertAdjacentHTML("beforeend", filtered);
 }
 DOMSelectors.option1.addEventListener("click", function (event) {
   event.preventDefault();
   showByGenre();
 });
 
-DOMSelectors.theme1.addEventListener("click", function (event){
+DOMSelectors.theme1.addEventListener("click", function (event) {
   event.preventDefault();
-
-})
+});
 // DOMSelectors.form.addEventListener()
 // for checkbox form for sorting cards
