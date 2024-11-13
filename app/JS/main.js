@@ -45,6 +45,7 @@ cards();
 function showByGenre(x) {
   document.querySelector(".container").innerHTML = "";
   const filtered = techProducts.filter((i) => i[salePrice]);
+  DOMSelectors.container.insertAdjacentHTML("beforeend", filtered)
 }
 DOMSelectors.option1.addEventListener("click", function (event) {
   event.preventDefault();
