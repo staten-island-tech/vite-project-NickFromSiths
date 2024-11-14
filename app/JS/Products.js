@@ -5,7 +5,7 @@ const techProducts = [
     salePrice: 599,
     brand: "Brand A",
     features: ["5G", "128GB Storage", "Triple Camera"],
-    img:"https://m.media-amazon.com/images/I/51hvaJzs0RL._AC_UF894,1000_QL80_.jpg"
+    img: "https://m.media-amazon.com/images/I/51hvaJzs0RL._AC_UF894,1000_QL80_.jpg",
   },
   {
     name: "Laptop ABC",
