@@ -6,13 +6,15 @@ html, body, * {
 }
 
 :root {
+  
   --light-blue:#2998ff;
   --dark-blue:#135cc5;
 
   --light-red: #f87171;
   --dark-red: #dc2626;
 
-  --gra1: #fffdfd;
+  --gra1: #e7e7e7;
+  --Gra1: #ddd;
   --gra2: #cecece;
   --gra3: #b4b1b1;
   --gra4: #929291;
@@ -21,47 +23,81 @@ html, body, * {
   --gra7: #515150;
   --gra8: #41403f;
 
-  --primary: var(--gra7);
-  --secondary: var(--gra2);
+  --primary: var(--gra3);
+  --navfooter: var(--gra7);
+  --side: var(--gra2);
+  --main: var(--gra1);
+  --hover: var(--Gra1);
+  
 
-  --font-color: #001010;
+  --font-color-black: #001010;
+  --font-color-light: #ddd;
 
 
   --h1: 7.594rem;
   --h2: 5.063rem;
+  --h3: 3rem;
+  --hoption: 2rem;
 }
-/* body {
-  background-color: var(--primary); 
-}*/
+
+
+.light {
+  --primary: var(--gra3);
+  --navfooter: var(--gra7);
+  --side: var(--gra2);
+  --main: var(--gra1);
+  --hover: var(--Gra1);
+  --font-color: var(--font-color-black);
+  --boxshadow: var(--gra7);
+  transition: 1s;
+}
+.dark {
+  --primary:#262626;
+  --navfooter: #1a1a1a;
+  --side: #333333;
+  --main: #4d4d4d;
+  --hover: #404040;
+  --font-color: var(--font-color-light);
+  --boxshadow: #404040;
+  transition: 1s;
+}
+
+
+
+
+
+
+
+
+body {
+  color: var(--font-color); 
+}
 h1 {
   font-size: var(--h1);
 }
 h2 {
   font-size: var(--h2);
 }
-.warm {
-  --primary: var(--light-red);
-}
-.cool {
-  --primary:var(--light-blue);
-}
 
+
+
+/*--------------------------------------------------------------------------------*/
 
 ::-webkit-scrollbar {
   width: 14px;
 }
 ::-webkit-scrollbar-track {
-  background-color: var(--primary);
+  background-color: var(--navfooter);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--secondary);
+  background-color: var(--side);
   border-radius: 5px;
 }
-
+/*--------------------------------------------------------------------------------*/
 .navbar {
   width: 100%;
   height: 7rem;
-  background-color: var(--primary);
+  background-color: var(--navfooter);
   position: sticky;
   top: 0;
   display: flex;
@@ -70,10 +106,16 @@ h2 {
 }
 .option{
   height: 5rem;
-  width: 30rem;
-  background-color: transparent;
+  width: 20rem;
+  background-color: var(--primary);
   margin-left: 5rem;
-
+  border-radius: 5px;
+  font-size: var(--hoption);
+  text-align: center;
+  padding: 1.3rem 0rem 1.3rem 0rem;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 .navcontent{
   margin: 7px 15px;
@@ -81,6 +123,16 @@ h2 {
 #logo{
   align-items: center;
 }
+.theme{
+  padding: .7rem .75rem .7rem .75rem;
+  border-radius: 15rem;
+  background-color: var(--primary);
+  border: none;
+}
+.theme:hover{
+  background-color: var(--hover);
+}
+/*--------------------------------------------------------------------------------*/
 .body {
   display:flex;
   flex-direction: row;
@@ -89,38 +141,31 @@ h2 {
 .side {
   width: 30%;
   height: 100%;
-  background-color: var(--secondary);
+  background-color: var(--side);
 }
 .main {
   width: 70%;
   height: 100%;
-  background-color: var(--gra1);
+  background-color: var(--main);
 }
 .content{
   height: 100rem auto;
   width: 100%;
-  background: var(--gra3);
-}
-.footer{
-  height: 7rem ;
-  width: 100%;
-  background-color: var(--primary);
+  background: var(--primary);
 }
 .products{
   text-align: center;
   padding: 2rem;
 }
+.footer{
+  height: 7rem ;
+  width: 100%;
+  background-color: var(--navfooter);
+}
 
-
-
-
-
-
-
-
-
+/*--------------------------------------------------------------------------------*/
 .container {
-  width: 90vw;
+  width: 90vw center;
   margin: 0rem 2rem auto;
   display: flex;
   flex-wrap: wrap;
@@ -137,7 +182,7 @@ h2 {
   justify-content: center;
   border-radius: 10px;
   margin: 15px;
-  box-shadow: 7px 7px 12px #00000058;
+  box-shadow: 7px 7px 12px var(--boxshadow);
   background-position: center;
   background-size: cover;
 }
@@ -158,8 +203,51 @@ h2 {
   font-size: 15px;
 }
 .Image{
-  margin-top: 30px;
+  margin-top: .5rem;
   width: 100%;
-  max-height: 200px;
-  object-fit: cover;
+  max-height: 15rem;
 }
+
+
+
+
+/*almost everything copied off internet------------------------------------------------*/
+
+
+/* The container <div> - needed to position the dropdown content */
+#dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  margin-top: 1.3rem;
+  display: none;
+  position: absolute;
+  background-color: var(--side);
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: var(--font-color);
+  font-size: 1.7rem;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: var(--hover)}
+
+/* Show the dropdown menu on hover */
+#dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+
+
+
+
