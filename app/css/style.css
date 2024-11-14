@@ -61,14 +61,6 @@ html, body, * {
   --boxshadow: #404040;
   transition: 1s;
 }
-
-
-
-
-
-
-
-
 body {
   color: var(--font-color); 
 }
@@ -78,7 +70,6 @@ h1 {
 h2 {
   font-size: var(--h2);
 }
-
 
 
 /*--------------------------------------------------------------------------------*/
@@ -209,8 +200,6 @@ h2 {
 }
 
 
-
-
 /*almost everything copied off internet------------------------------------------------*/
 
 
@@ -247,7 +236,3 @@ h2 {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 /* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
-
-
-
-
